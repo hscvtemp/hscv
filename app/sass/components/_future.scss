@@ -1,0 +1,26 @@
+section.future {
+  clear: both;
+  h1 {
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+  }
+  .inner {
+    @include wrapper;
+  }
+}
+
+.future-idea {
+  @include border-radius(300px);
+  background-color: darkred;
+  color: white;
+  padding: 30px;
+  float: left;
+  height: 10em;
+  width: 10em;
+  text-align: center;
+  margin: 1.5%;
+  h3 {
+    color: white;
+  }
+}

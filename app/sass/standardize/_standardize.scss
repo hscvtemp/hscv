@@ -1,0 +1,22 @@
+/**
+ * Sandardize.scss
+ *
+ * Keep your base element styling cross-browser friendly with a minimal footprint and
+ * maximum flexibility.
+ *
+ * Standardize.scss is a compass plugin based on normalize.css with added variables
+ * for typography and cross-browser support.
+ *
+ * Requires:
+ * - Sass (3.4+)
+ * - Compass (1.0+)
+ *
+ */
+
+@import "standardize/variables";
+@import "standardize/elements";
+@import "standardize/forms";
+@import "standardize/grouping";
+@import "standardize/media";
+@import "standardize/tables";
+@import "standardize/typography";

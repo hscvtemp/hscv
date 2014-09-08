@@ -1,0 +1,27 @@
+body > header {
+  @include clearfix;
+  padding-bottom: 1em;
+  min-height: 10em;
+  background-color: $primary;
+  text-align: center;
+  color: white;
+  h1 {
+    color: white;
+    font-size: 5em;
+    letter-spacing: -3px;
+    font-weight: 200;
+  }
+  > div {
+    @include wrapper;
+    > p {
+      @include border-radius(1.5em);
+      @include adjust-font-size-to(1.1em);
+      color: rgba(255,255,255,0.85);
+      background: rgba(255,255,255,0.1);
+      padding: .75em 1.5em;
+      display: inline-block;
+      margin-bottom: 1.5em;
+      margin-top: 0;
+    }
+  }
+}

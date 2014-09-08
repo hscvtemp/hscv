@@ -1,0 +1,55 @@
+//
+// SASS Color Boilerplate.
+//
+
+$primary: #05365c;
+$secondary: #3cd48e;
+$accent1: #f5f45d;
+$accent2: #a00d18;
+//$primary: #0d486e;
+
+$background-page: #CCC;
+
+// Primary
+$primary: #145b88 !default;
+$primary-darker: mix($primary, #000, 80%);
+$primary-lighter: mix($primary, #FFF, 80%);
+
+// Secondary
+$secondary: #9cc4de !default;
+$secondary-darker: mix($secondary, #000, 80%);
+$secondary-lighter: mix($secondary, #FFF, 80%);
+
+// Accent 1
+$accent1: #9bebca !default;
+$accent1-darker: mix($accent1, #000, 80%);
+$accent1-lighter: mix($accent1, #FFF, 80%);
+
+// Accent 2
+$accent2: #faf1be !default;
+$accent2-darker: mix($accent2, #000, 80%);
+$accent2-lighter: mix($accent2, #FFF, 80%);
+
+// Positive actions, e.g submit buttons
+$positive: #4D8F46 !default;
+
+// Negative actions, e.g delete buttons
+$negative: #B73939 !default;
+
+// Main text color
+$text: #222222 !default;
+
+// Alternate text color
+$text-alt: #898989 !default;
+
+// Main page background
+$background-page: #FAFAFA !default;
+$background-page-darker: mix($background-page, #000, 90%);
+$background-page-lighter: mix($background-page, #FFF, 90%);
+
+// Secondary Background
+// Examples: list examples here
+$background-secondary: #888888 !default;
+
+// Text color for text on top of dark backgrounds
+$text-over-background-secondary: #FFFFFF !default;

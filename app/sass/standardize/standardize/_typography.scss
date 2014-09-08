@@ -1,0 +1,143 @@
+@import "compass/typography";
+
+// Variables
+
+// Using a modular scale, see: http://modularscale.com/
+$base-font-size: 18px !default;
+$base-line-height: 27px !default;
+
+@include establish-baseline($base-font-size);
+
+$font-family-base: sans-serif !default;
+$font-family-monospace: monospace, monospace;
+// $font-family: 'Open Sans', sans-serif;
+
+// 3.927
+// 2.618
+$heading-1-font-size: 2.427em;
+$heading-2-font-size: 1.618em;
+$heading-3-font-size: 1.5em;
+
+$heading-1-color: black;
+$heading-2-color: black;
+$heading-3-color: black;
+
+/**
+ * 1. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: $font-family-base;
+  -ms-text-size-adjust: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 1 */
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1 {
+  @include adjust-font-size-to($heading-1-font-size);
+  color: $heading-1-color;
+}
+
+h2 {
+  @include adjust-font-size-to($heading-2-font-size);
+  color: $heading-2-color;
+}
+
+h3 {
+  @include adjust-font-size-to($heading-3-font-size);
+  color: $heading-3-color;
+}
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: $heading-1-font-size;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

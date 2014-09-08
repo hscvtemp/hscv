@@ -1,0 +1,36 @@
+//
+// Classy.scss
+// A set of useful SASS mixins & optional classes, especially useful for designing in the browser
+// and for using with Drupal generated HTML.
+//
+
+@mixin strip-list {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    list-style-image: none;
+  }
+}
+
+@mixin basic-menu {
+  @include strip-list;
+  li {
+    float: left;
+    margin-right: 0.8em;
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+@mixin basic-menu-inline {
+  @include strip-list;
+  li {
+    display: inline-block;
+    margin-right: 0.8em;
+    a {
+      display: block;
+    }
+  }
+}
