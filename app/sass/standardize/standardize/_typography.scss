@@ -1,4 +1,13 @@
 @import "compass/typography";
+@import "toolkit";
+// Custom stuff.
+// Links: link-colors($normal, $hover, $active, $visited, $focus)
+a:link,
+a:hover,
+a:visited,
+a:focus {
+  color: $secondary;
+}
 
 // Variables
 

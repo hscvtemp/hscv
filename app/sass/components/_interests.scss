@@ -1,9 +1,11 @@
 section.future {
+  //background-image: url("../images/pentagon-back.png");
   clear: both;
   h1 {
-    background-color: black;
-    color: white;
+    background-color: rgba(0,0,0,0.1);
+    //color: white;
     padding: 0.5em;
+    margin: 0 20%;
   }
   .inner {
     @include wrapper;

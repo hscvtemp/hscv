@@ -1,8 +1,10 @@
 section.timeline {
+  background-image: url("../images/agsquare.png");
+  overflow: hidden;
   > div {
     @include wrapper;
+    padding-top: 3em;
   }
-
 }
 
 .timeline-list {
@@ -31,9 +33,6 @@ section.timeline {
     color: #FFF;
     position: relative;
     margin-bottom: 4em;
-    &:hover {
-      cursor: pointer;
-    }
     // Dots.
     &:before {
       @include border-radius(3em);
@@ -56,17 +55,37 @@ section.timeline {
     }
     &:hover:before {
       background-color: $secondary;
+      cursor: pointer;
     }
     &.active:before {
       @include rotate(45deg);
       background-color: $secondary;
     }
     // Alignment.
-    &:nth-of-type(2n) { // Left hand side items.
+    &:nth-of-type(2n) { // Right hand side items.
+      text-align: left;
+      margin-left: calc(50%);
+      margin-right: 8%;
+      padding-right: 1em;
+      border-right: 10px solid $secondary;
+      &:before {
+        left: calc(#{$offset});
+      }
+      h3 {
+        padding-left: $content-offset;
+        float: left;
+      }
+      > div {
+        margin-left: $content-offset * 1.6;
+      }
+
+    }
+    &:nth-of-type(2n+1) { // Left hand side items.
       text-align: right;
       margin-right: calc(50%);
-      margin-left: 10%;
+      margin-left: 8%;
       padding-left: 1em;
+      border-left: 10px solid $secondary;
       &:before {
         right: calc(#{$offset});
       }
@@ -78,43 +97,33 @@ section.timeline {
         margin-right: $content-offset * 1.6;
       }
     }
-    &:nth-of-type(2n+1) { // Right hand side items.
-      text-align: left;
-      margin-left: calc(50%);
-      margin-right: 10%;
-      padding-right: 1em;
-      &:before {
-        left: calc(#{$offset});
-      }
-      h3 {
-        padding-left: $content-offset;
-        float: left;
-      }
-      > div {
-        margin-left: $content-offset * 1.6;
-      }
-    }
     // Content.
     h3 {
       color: #FFF;
       line-height: 2.7em;
       display: inline;
       margin: 0;
+      &:hover {
+        cursor: pointer;
+      }
     }
     > time, .time {
       display: inline-block;
-      margin-top: 1.4em;
-      margin-right: 0.25em;
+      margin-top: 1.35em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
     }
     > div {
       clear: both;
       margin-top: 0.5em;
       max-height: 100em;
       //height: auto;
-      @include transition(all ease 1s);
+      overflow: auto;
+      @include transition(all ease 2s);
       &.hidden {
         max-height: 0;
         height: 0;
+        overflow: hidden;
       }
     }
   }

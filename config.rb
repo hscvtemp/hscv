@@ -2,6 +2,7 @@
 require 'breakpoint'
 require 'singularitygs'
 require 'sass-globbing'
+require 'toolkit'
 
 
 # Set this to the root of your project when deployed:
