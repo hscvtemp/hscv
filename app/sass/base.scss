@@ -1,7 +1,8 @@
 // Base Partial.
-
 @import "compass/css3";
 @import "compass/utilities";
+
+@import "breakpoint";
 
 @import "variables/**/*";
 @import "abstractions/**/*";

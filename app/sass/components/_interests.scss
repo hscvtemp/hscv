@@ -1,28 +1,66 @@
 section.future {
   //background-image: url("../images/pentagon-back.png");
+  @include pie-clearfix;
   clear: both;
+  padding-top: 2em;
+  padding-bottom: 2em;
   h1 {
-    background-color: rgba(0,0,0,0.1);
+    //background-color: rgba(0,0,0,0.9);
     //color: white;
+    @include wrapper;
     padding: 0.5em;
-    margin: 0 20%;
+    margin-top: 0;
+    text-align: center;
+    position: relative;
+    background-color: $background-page;
+    padding-left: 2em;
+    padding-right: 2em;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 40%;
+      border-bottom: 5px solid rgba(0, 0, 0, 0.25);
+      content: "";
+    }
+    &:after {
+      right: 0px;
+    }
+    &:before {
+      left: 0px;
+    }
   }
   .inner {
     @include wrapper;
+    padding-top: 8em; // Reposition from the vertical-center mixin;
   }
 }
 
 .future-idea {
   @include border-radius(300px);
+  @include vertical-center;
   background-color: darkred;
   color: white;
-  padding: 30px;
+  padding: 20px;
   float: left;
-  height: 10em;
-  width: 10em;
+  height: 5em;
+  width: 5em;
   text-align: center;
-  margin: 1.5%;
+  margin: 0;
   h3 {
     color: white;
+  }
+  &.massive {
+    height: 14em;
+    width: 14em;
+  }
+  &.large {
+    height: 10em;
+    width: 10em;
+  }
+  &.small {
+    height: 6em;
+    width: 6em;
   }
 }

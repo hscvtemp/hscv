@@ -1,15 +1,21 @@
 body > header {
   overflow: hidden;
   padding-bottom: 1em;
-  min-height: 10em;
-  background-color: $primary;
+  min-height: 15em;
+  padding-top: 10em;
+  //background-color: $primary;
+  background-image: url('../images/header-back-train-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   text-align: center;
   color: white;
   h1 {
     color: white;
-    font-size: 5em;
+    font-size: 6em;
     letter-spacing: -3px;
     font-weight: 200;
+    text-transform: uppercase;
   }
   > div {
     @include wrapper;

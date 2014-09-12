@@ -9,12 +9,11 @@ $cols: 12;
 $gutter: 10px;
 
 // Breakpoints.
-$xl: 1250px;
-$l: 1080px;
-$m: 800px;
-$s: 540px;
-$xs: 320px;
+$medium: 50em;
+$large: 76em;
+$massive: 90em;
 
-// Max width
+// Constraint margins.
 
-$max-width: 85%;
+$c-margin: 5%;
+$c-margin-large: 8%;

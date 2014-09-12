@@ -1,4 +1,6 @@
 @mixin wrapper {
-  max-width: $max-width;
-  margin: 0 auto;
+  margin: 0 $c-margin;
+  @include breakpoint($large) {
+    margin: 0 $c-margin-large;
+  }
 }
