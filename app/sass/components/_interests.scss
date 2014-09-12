@@ -1,9 +1,21 @@
+@mixin interest-bubble($size: 10em) {
+  height: $size;
+  width: $size;
+  padding-top: $size / 2.666;
+  position: relative;
+  top: - $size / 2;
+  * {
+    font-size: $size / 10 + 0.2em;
+  }
+}
+
 section.future {
   //background-image: url("../images/pentagon-back.png");
   @include pie-clearfix;
   clear: both;
   padding-top: 2em;
   padding-bottom: 2em;
+  text-align: center;
   h1 {
     //background-color: rgba(0,0,0,0.9);
     //color: white;
@@ -33,34 +45,58 @@ section.future {
   }
   .inner {
     @include wrapper;
-    padding-top: 8em; // Reposition from the vertical-center mixin;
+    padding-top: 10em; // Reposition from the vertical-center mixin;
   }
 }
 
 .future-idea {
+  @include box-sizing(border-box);
   @include border-radius(300px);
-  @include vertical-center;
-  background-color: darkred;
+  @include transition(all linear 1s);
+  background-color: #888;
   color: white;
   padding: 20px;
-  float: left;
   height: 5em;
   width: 5em;
   text-align: center;
-  margin: 0;
+  margin: 3px;
+  display: inline-block;
+  &:hover {
+    opacity: .5;
+    @include rotate(360deg);
+  }
+  &:nth-child(2n+1) {
+    background-color: $primary;
+  }
+
+  &:nth-child(5n),
+  &:first-child {
+    background-color: $secondary;
+  }
+  font-size: 0.8em;
+  @include breakpoint($large) {
+    font-size: 1em;
+  }
   h3 {
     color: white;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: $font-family-headings;
+    font-weight: 500;
   }
   &.massive {
-    height: 14em;
-    width: 14em;
+    @include interest-bubble($size: 18em);
   }
   &.large {
-    height: 10em;
-    width: 10em;
+    @include interest-bubble($size: 15em);
+  }
+  &.medium {
+    @include interest-bubble($size: 12em);
   }
   &.small {
-    height: 6em;
-    width: 6em;
+    @include interest-bubble($size: 9em);
   }
 }
+
+
