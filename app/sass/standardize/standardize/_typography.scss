@@ -52,12 +52,14 @@ h1 {
   @include adjust-font-size-to($heading-1-font-size);
   color: $heading-1-color;
   font-family: $font-family-headings;
+  font-weight: 400;
 }
 
 h2 {
   @include adjust-font-size-to($heading-2-font-size);
   color: $heading-2-color;
   font-family: $font-family-headings;
+  font-weight: 400;
 }
 
 h3 {

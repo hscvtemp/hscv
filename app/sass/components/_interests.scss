@@ -43,6 +43,9 @@ section.future {
       left: 0px;
     }
   }
+  h2 {
+    font-weight: 300;
+  }
   .inner {
     @include wrapper;
     padding-top: 10em; // Reposition from the vertical-center mixin;
