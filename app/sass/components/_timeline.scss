@@ -77,7 +77,6 @@ section.timeline {
     &:before {
       @include border-radius(3em);
       @include transition(all ease 0.25s);
-      //@include box-shadow(0px 0px 0px 4px #FFF);
       content: "+";
       background-color: #CCC;
       text-align: center;
@@ -117,8 +116,6 @@ section.timeline {
     > time, .time {
       display: inline-block;
       margin-top: 1.35em;
-      //margin-right: 0.5em;
-      //margin-left: 0.5em;
     }
     > div {
       @include transition(all ease 2s);
