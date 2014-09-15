@@ -6,11 +6,11 @@ This site was built using a custom Yeoman generator and Grunt and designing in-b
 
 Some other tools and resources used in the making include:
 
-* Git
-* Photoshop
 * Sass / Compass
+* Git
 * Subtle Patterns
 * Google Fonts
 * BrowserStack
+* Photoshop
 
 Please don't share this repository :)
