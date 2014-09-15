@@ -3,7 +3,32 @@ section.timeline {
   overflow: hidden;
   > div {
     @include wrapper;
-    padding-top: 3em;
+    padding-top: 2em;
+  }
+  .intro {
+    max-width: 85%;
+    margin: 0 auto;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 1em;
+    p {
+      line-height: 1.5;
+      font-weight: 200;
+      font-size: 1.2em;
+      text-align: center;
+      &:first-child {
+        font-weight: 700;
+      }
+    }
+  }
+  h1 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .sub {
+    text-align: center;
+    margin-bottom: 2em;
+    color: rgba(0,0,0,0.5);
   }
 }
 
@@ -130,4 +155,5 @@ section.timeline {
       }
     }
   }
+
 }
