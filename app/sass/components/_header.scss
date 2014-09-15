@@ -3,13 +3,15 @@ body > header {
   padding-bottom: 1em;
   min-height: 15em;
   padding-top: 10em;
-  //background-color: $primary;
   background-image: url('../images/header-back-train-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
   text-align: center;
   color: white;
+  background-position: 65% top;
+  @include breakpoint($large) {
+    background-position: center top;
+  }
   h1 {
     color: white;
     font-size: 6em;

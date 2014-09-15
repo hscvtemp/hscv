@@ -3,10 +3,8 @@ section.skillset {
   background-image: url("../images/pentagon-back-2.png");
   clear: both;
   border-top: 5px dashed rgba(0,0,0,0.6);
-  //border-bottom: 5px solid rgba(0,0,0,0.6);
   padding-bottom: 2em;
   header {
-    //background-color: rgba(0,0,0,0.5);
     padding: 2em 1em;
     margin-bottom: 2em;
     margin-top: 2em;
@@ -26,14 +24,14 @@ section.skillset {
 .skillset-item {
   @include box-sizing(border-box);
   margin: 0 1.5% 2em 1.5%;
-  padding: 0 1.5em 0 1.5em;
+  padding: .5em 1.5em .5em 1.5em;
   text-align: center;
   background-color: rgba(255,255,250,0.8);
   min-height: 15em;
   @include breakpoint($medium) {
     float: left;
     width: 47%;
-    min-height: 18em;
+    min-height: 19em;
   }
   @include breakpoint($large) {
     width: 30%;
