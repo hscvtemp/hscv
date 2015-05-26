@@ -35,10 +35,10 @@ section.skillset {
   }
   @include breakpoint($large) {
     width: 30%;
-    min-height: 23em;
+    min-height: 29em;
   }
   @include breakpoint($massive) {
-    min-height: 20em;
+    min-height: 25em;
   }
   h2 {
     margin-bottom: 0.5em;

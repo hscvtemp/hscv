@@ -14,3 +14,10 @@ Some other tools and resources used in the making include:
 * Photoshop
 
 Please don't share this repository :)
+
+### Running locally
+
+```npm install```
+```bundle install```
+```grunt```
+```php -S localhost:8001```
